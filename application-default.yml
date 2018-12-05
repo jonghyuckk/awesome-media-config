@@ -1,0 +1,6 @@
+api:
+  bff:
+    path: /
+  services:
+    ##url: http://169.56.166.252:30357
+    url: http://localhost:9999/awesome-media
