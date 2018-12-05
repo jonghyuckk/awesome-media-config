@@ -1,6 +1,12 @@
-api:
-  bff:
-    path: /
-  services:
-    ##url: http://169.56.166.252:30357
-    url: http://localhost:9999/awesome-media
+apiVersion: v1
+kind: Service
+metadata:
+  name: awesome-media-backend
+spec:
+  ports:
+  - name: "http"
+    port: 8090
+    targetPort: 8090
+  selector:
+    app: awesome-media-backend
+  type: NodePort
