@@ -1,3 +1,1 @@
 # awesome-media-config
-
-## 
